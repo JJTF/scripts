@@ -9,4 +9,5 @@ print('metadatos:', doc.metadata)
 pagina=doc.loadPage(0)
 text=pagina.getText("text")
 print('hello world')
+"modificar"
 print(text)

@@ -1,0 +1,20 @@
+_____________________________________________________________________________________
+Function QUITARTILDES(cadena As String) As String
+  Dim posicion As Long
+  Const conTildes As String = "áéíóúÁÉÍÓÚ-."
+  Const sinTildes As String = "aeiouAEIOU"
+  
+  For i = 1 To Len(conTildes)
+    cadena = Replace(cadena, Mid(conTildes, i, 1), Mid(sinTildes, i, 1))
+  Next i
+  
+  QUITARTILDES = cadena
+End Function
+
+______________________________________________________________________________________
+Sub DESCOMBINAR()
+	Range("A1:AY2537").UnMerge
+
+End Sub
+
+______________________________________________________________________________________
